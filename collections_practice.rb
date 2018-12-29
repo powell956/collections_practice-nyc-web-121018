@@ -27,6 +27,7 @@ def swap_elements(array)
     end
     counter += 1
   end
+  new_arr
 end
 
 def swap_elements_from_to(array, index, destination_index)
@@ -43,6 +44,7 @@ def swap_elements_from_to(array, index, destination_index)
     end
     counter += 1
   end
+  new_arr
 end
 
 def reverse_array(array)
@@ -52,5 +54,5 @@ def reverse_array(array)
     new_arr << array[counter]
     counter -= 1
   end
-
+  new_arr
 end
