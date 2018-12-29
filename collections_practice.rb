@@ -25,7 +25,7 @@ def swap_elements(array)
     else
       new_arr << array[counter]
     end
-    counter +=1
+    counter += 1
   end
 end
 
@@ -41,6 +41,6 @@ def swap_elements_from_to(array, index, destination_index)
     else
       new_arr << array[counter]
     end
-    counter +=1
+    counter += 1
   end
 end
