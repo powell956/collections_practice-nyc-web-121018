@@ -28,3 +28,19 @@ def swap_elements(array)
     counter +=1
   end
 end
+
+def swap_elements_from_to(array, index, destination_index)
+  new_arr = []
+  temp = []
+  counter = 0
+  while counter < array.length
+    if counter == index
+      temp << array[index]
+    elsif counter == destination_index
+      array.push(temp.shift)
+    else
+      new_arr << array[counter]
+    end
+    counter +=1
+  end
+end
