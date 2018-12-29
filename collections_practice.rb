@@ -1,1 +1,30 @@
+def sort_array_asc(int_array)
+  int_array.sort { |a, b| a <=> b }
+end
 
+def sort_array_desc(int_array)
+  int_array.sort { |a, b| b <=> a }
+end
+
+def sort_array_char_count(str_array)
+  str_array.sort { |str1, str2| str1.length <=> str2.length }
+end
+
+def swap_elements(array)
+  new_arr = []
+  counter = 0
+  while counter < array.length
+    if counter == 1
+      if array[1] > array [2]
+        new_arr << array[1]
+      else
+        new_arr << array[2]
+      end
+    elsif counter == 2
+      next
+    else
+      new_arr << array[counter]
+    end
+    counter +=1
+  end
+end
