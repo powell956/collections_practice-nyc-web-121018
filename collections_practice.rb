@@ -44,3 +44,13 @@ def swap_elements_from_to(array, index, destination_index)
     counter += 1
   end
 end
+
+def reverse_array(array)
+  new_arr = []
+  counter = array.length + 1
+  until counter == 0
+    new_arr << array[counter]
+    counter -= 1
+  end
+
+end
