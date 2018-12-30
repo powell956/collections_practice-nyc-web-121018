@@ -45,14 +45,13 @@ def swap_elements_from_to(array, index, destination_index)
   range = 0..(array.length-1)
 
   for el in range do
-    if counter == index
-      temp << array[index]
-    elsif counter == destination_index
+    if array.index(el) == index
+      temp << el
+    elsif array.index(el) == destination_index
       array.push(temp.shift)
     else
-      new_arr << array[counter]
+      new_arr << el
     end
-    counter += 1
   end
 
   new_arr
