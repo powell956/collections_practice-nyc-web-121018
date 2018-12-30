@@ -119,7 +119,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect!.with_index { |element, index|
+  array.collect.with_index { |element, index|
     if index = 1
       next
     else
