@@ -48,6 +48,7 @@ def swap_elements_from_to(array, index, destination_index)
       temp << el
     elsif i == destination_index
       new_arr.push(temp.shift)
+      new_arr.push(array[destination_index])
     else
       new_arr << el
     end
