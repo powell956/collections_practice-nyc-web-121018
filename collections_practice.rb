@@ -25,6 +25,7 @@ def swap_elements(array)
         new_arr << array[2]
       end
     elsif counter == 2
+      counter += 1
       next
     else
       new_arr << array[counter]
