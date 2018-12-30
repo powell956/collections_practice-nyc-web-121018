@@ -79,8 +79,8 @@ def kesha_maker(array)
     if el.length > 2
       chars = el.split("")
 
-      chars[2]= "$"
-      array[el] = chars.join("")
+      chars[2] = "$"
+      el = chars.join("")
 
       new_arr << el
     else
@@ -119,7 +119,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect { |element, index|
+  array.each_with_index.collect! { |element, index|
     if index = 1
       next
     else
