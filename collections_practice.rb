@@ -81,7 +81,7 @@ def kesha_maker(array)
 
       chars[2]= "$"
       array[el] = chars.join("")
-      
+
       new_arr << el
     else
       new_arr << el
