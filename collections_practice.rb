@@ -42,7 +42,7 @@ end
 def swap_elements_from_to(array, index, destination_index)
   new_arr = []
   temp = []
-  range = 0..(array.length-1) 
+  range = 0..(array.length-1)
 
   for el in range do
     if counter == index
