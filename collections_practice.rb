@@ -78,7 +78,7 @@ def kesha_maker(array)
   for el in array do
     if el.length > 2
       chars = el.split("")
-      
+
       chars[2]= "$"
       array[el] = chars.join("")
       
@@ -123,7 +123,7 @@ def add_s(array)
     if index = 1
       next
     else
-      element + "s"
+      element << "s"
     end
   }
   array
