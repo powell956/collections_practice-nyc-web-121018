@@ -78,10 +78,10 @@ def kesha_maker(array)
   for el in array do
     if el.length > 2
       chars = el.split("")
-      if chars.index(2) == "s"
-        chars[chars.index("s")] = "$"
-      end
+      
+      chars[2]= "$"
       array[el] = chars.join("")
+      
       new_arr << el
     else
       new_arr << el
