@@ -63,7 +63,7 @@ def reverse_array(array)
   new_arr = []
   counter = array.length - 1
 
-  while counter > 0
+  while counter > -1
     new_arr << array[counter]
     counter -= 1
   end
