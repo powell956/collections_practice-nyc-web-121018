@@ -20,9 +20,11 @@ def swap_elements(array)
   while counter < array.length
     if counter == 1
       if array[1] > array [2]
-        new_arr << array[1], array[2]
+        new_arr << array[1]
+        new_arr << array[2]
       else
-        new_arr << array[2], array[1]
+        new_arr << array[2]
+        new_arr << array[1]
       end
     elsif counter == 2
       counter += 1
