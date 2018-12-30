@@ -42,12 +42,11 @@ end
 def swap_elements_from_to(array, index, destination_index)
   new_arr = []
   temp = []
-  range = 0..(array.length-1)
 
-  for el in range do
-    if array.index(el) == index
+  array.each_with_index do |el, i|
+    if i == index
       temp << el
-    elsif array.index(el) == destination_index
+    elsif i == destination_index
       array.push(temp.shift)
     else
       new_arr << el
